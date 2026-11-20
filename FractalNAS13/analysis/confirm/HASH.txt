@@ -1,0 +1,14 @@
+SHA-256 of PREREGISTRATION.md in this archive
+=============================================
+
+7eb02aa68ad7d6728c4ba29cfacaa60b78af933e8f81540771c213e9129bf8df  PREREGISTRATION.md
+
+Recompute it with
+
+    sha256sum analysis/confirm/PREREGISTRATION.md
+
+(or `shasum -a 256` on macOS). The same document is deposited in a public repository that
+time-stamps what it receives; the deposit identifier is withheld here for anonymous review and
+is supplied to the editor through the submission system. The hash is what lets the deposited
+copy and this one be shown to be the same bytes, so any edit to the registered document is
+visible.

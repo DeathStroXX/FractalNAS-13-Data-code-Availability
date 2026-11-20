@@ -1,0 +1,6 @@
+# Versions the archived results were produced with (Python 3.10.6).
+numpy==1.26.4
+scipy==1.15.3
+scikit-learn==1.7.2
+matplotlib==3.10.8
+statsmodels==0.15.0

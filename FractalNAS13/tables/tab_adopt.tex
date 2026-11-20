@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{What to change, collected. Every entry is a difference between configurations on the same landscape, in accuracy points, taken from the table or figure named; none is a predicted accuracy. $\dagger$ a property of the landscape rather than a claim about a real pipeline (Section~\ref{sec:limitations}); $\ddagger$ a forecast one level past the edge of the declared grid, validated leave-one-level-out (Supplementary Section~S6). The elite count is omitted: it is the one setting this paper does not claim. Produced by \texttt{analysis/s68\_adopt.py}.}
+\label{tab:adopt}
+\footnotesize
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{l l l rr l}
+\toprule
+& & & \multicolumn{2}{c}{$\Delta$ (pts)} & \\
+\cmidrule(lr){4-5}
+Decision & As run & Recommended & C-10 & C-100 & Evidence \\
+\midrule
+tournament size $k$ & 3 & 7 & $+0.33$ & $+0.52$ & Table~\ref{tab:settings} \\
+mutation rate $p_m$ (effective) & 0.08 & 0.08 & $+0.00$ & $+0.00$ & Table~\ref{tab:settings} \\
+population size & 20 & 10 & $-0.74$ & $-0.75$ & Table~\ref{tab:settings} \\
+acceptance gate & smoke call & property test $+$ replay & $+0.27$ & $+0.35$ & Table~\ref{tab:gate} \\
+selection signal$\dagger$ & LLM predictor & measured accuracy & $+5.15$ & $+7.65$ & Fig.~\ref{fig:settings}(f) \\
+dropout range$\ddagger$ & $\geq 0.05$ & extended below $0.05$ & $+4.12$ & $+2.71$ & Suppl.\ Section~S6 \\
+\bottomrule
+\end{tabular}}
+\end{table}

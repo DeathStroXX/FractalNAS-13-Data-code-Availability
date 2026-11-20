@@ -1,0 +1,153 @@
+{
+ "r_gate": 60,
+ "draws": 2000,
+ "gates": [
+  "none",
+  "property",
+  "property+"
+ ],
+ "r_bench": 150,
+ "cifar10": {
+  "n_proposals": 33,
+  "n_inspace": 31,
+  "n_deployments": 9,
+  "gates": {
+   "none": {
+    "delta_mean": -0.14140146423844557,
+    "delta_se": 0.0,
+    "accepted": 33.0,
+    "rejected": 0.0,
+    "accept_rate": 1.0,
+    "deployable_share": 0.9393939393939394
+   },
+   "property": {
+    "delta_mean": -0.14140146423844557,
+    "delta_se": 0.0,
+    "accepted": 31.0,
+    "rejected": 2.0,
+    "accept_rate": 0.9393939393939394,
+    "deployable_share": 1.0
+   },
+   "property+": {
+    "delta_mean": 0.1249478815865675,
+    "delta_se": 0.009126183950758808,
+    "accepted": 13.0655,
+    "rejected": 19.9345,
+    "accept_rate": 0.3959242424242424,
+    "deployable_share": 1.0
+   }
+  },
+  "by_op": {
+   "combine_genes": {
+    "n": 13,
+    "mean": 0.007884159106149232,
+    "se": 0.24899778943688597,
+    "share_pos": 0.15384615384615385
+   },
+   "mutate_gene": {
+    "n": 8,
+    "mean": -0.11475600576084943,
+    "se": 0.0674723168576649,
+    "share_pos": 0.125
+   },
+   "select_competitor": {
+    "n": 4,
+    "mean": -0.3551140011653544,
+    "se": 0.6607732036641216,
+    "share_pos": 0.75
+   },
+   "_create_random_chromosome": {
+    "n": 6,
+    "mean": -0.6576548077758417,
+    "se": 0.5430077663867828,
+    "share_pos": 0.3333333333333333
+   }
+  },
+  "gain_property": 0.0,
+  "gain_replay": 0.2663493458250131,
+  "gain_total": 0.2663493458250131
+ },
+ "cifar100": {
+  "n_proposals": 35,
+  "n_inspace": 34,
+  "n_deployments": 9,
+  "gates": {
+   "none": {
+    "delta_mean": -0.17717798913235697,
+    "delta_se": 0.0,
+    "accepted": 35.0,
+    "rejected": 0.0,
+    "accept_rate": 1.0,
+    "deployable_share": 0.9714285714285714
+   },
+   "property": {
+    "delta_mean": -0.17717798913235697,
+    "delta_se": 0.0,
+    "accepted": 34.0,
+    "rejected": 1.0,
+    "accept_rate": 0.9714285714285714,
+    "deployable_share": 1.0
+   },
+   "property+": {
+    "delta_mean": 0.1713505257952794,
+    "delta_se": 0.013298081779250128,
+    "accepted": 18.4105,
+    "rejected": 16.5895,
+    "accept_rate": 0.5260142857142857,
+    "deployable_share": 1.0
+   }
+  },
+  "by_op": {
+   "combine_genes": {
+    "n": 14,
+    "mean": -0.9094362499721795,
+    "se": 0.3965144134631789,
+    "share_pos": 0.14285714285714285
+   },
+   "mutate_gene": {
+    "n": 8,
+    "mean": 0.1053442797392945,
+    "se": 0.0732758664428316,
+    "share_pos": 0.375
+   },
+   "select_competitor": {
+    "n": 4,
+    "mean": 0.9503604483869736,
+    "se": 0.2725156527804363,
+    "share_pos": 1.0
+   },
+   "_create_random_chromosome": {
+    "n": 8,
+    "mean": 0.25108204662012756,
+    "se": 0.1245508645486592,
+    "share_pos": 0.875
+   }
+  },
+  "gain_property": 0.0,
+  "gain_replay": 0.34852851492763637,
+  "gain_total": 0.34852851492763637
+ },
+ "audit": {
+  "n": 68,
+  "inspace": 65,
+  "inspace_share": 0.9558823529411765,
+  "by_cat": {
+   "modified": 36,
+   "equivalent": 29,
+   "raises/hangs": 2,
+   "off-grid": 1
+  },
+  "by_op_fail": {
+   "mutate_gene": 1,
+   "_create_random_chromosome": 0,
+   "select_competitor": 1,
+   "combine_genes": 1
+  },
+  "by_op_n": {
+   "mutate_gene": 17,
+   "_create_random_chromosome": 14,
+   "select_competitor": 9,
+   "combine_genes": 28
+  }
+ }
+}

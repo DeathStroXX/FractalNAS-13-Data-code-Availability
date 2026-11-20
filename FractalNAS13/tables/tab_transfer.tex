@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering
+\caption{The recommendation, checked against the landscape that produced it. \textbf{Recommended value} is where each setting peaks on three landscapes refitted to the same architectures. \textbf{in-sample} is its gain on the landscape that chose it, \textbf{held out} its gain on a landscape fitted from runs that did not, averaged over every split in Supplementary Table~S7; the difference is the optimism. These two checks sweep at 200 and 500 replicates rather than the $1{,}000$ of Table~\ref{tab:settings}, which is why their gains differ from it slightly and why the ridge can peak one level away inside the flat mutation-rate region. Produced by \texttt{analysis/s64\_surrogate\_family.py} and \texttt{analysis/s65\_holdout\_tuning.py}.}
+\label{tab:transfer}
+\footnotesize
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{l c ccc rr}
+\toprule
+& & \multicolumn{3}{c}{\textbf{Recommended value}} & \multicolumn{2}{c}{\textbf{Gain (points)}} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-7}
+\textbf{Setting} & \textbf{Pipeline} & ridge & forest & boosted & in-sample & held out \\
+\midrule
+\multicolumn{7}{l}{\textit{CIFAR-10}} \\
+tournament size $k$ & 3 & 10 & 7 & 10 & $+0.31$ & $+0.26$ \\
+mutation rate $p_m$ & 0.08 & 0.08 & 0.08 & 0.1 & $+0.00$ & $-0.02$ \\
+population size & 20 & 20 & 20 & 20 & $+0.00$ & $+0.00$ \\
+elite count & 5 & 2 & 2 & 1 & $+0.25$ & $+0.19$ \\
+\textit{Optimism, and identical recommendations} & & \multicolumn{3}{c}{22/32} & \multicolumn{2}{c}{$+0.03$} \\
+\midrule
+\multicolumn{7}{l}{\textit{CIFAR-100}} \\
+tournament size $k$ & 3 & 7 & 10 & 7 & $+0.59$ & $+0.54$ \\
+mutation rate $p_m$ & 0.08 & 0.1 & 0.1 & 0.1 & $+0.01$ & $-0.04$ \\
+population size & 20 & 20 & 20 & 40 & $+0.00$ & $+0.00$ \\
+elite count & 5 & 2 & 1 & 2 & $+0.37$ & $+0.32$ \\
+\textit{Optimism, and identical recommendations} & & \multicolumn{3}{c}{22/32} & \multicolumn{2}{c}{$+0.04$} \\
+\bottomrule
+\end{tabular}}
+\end{table}

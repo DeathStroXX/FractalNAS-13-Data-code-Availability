@@ -1,0 +1,14 @@
+\begin{tabular}{l rr rr}
+\toprule
+& \multicolumn{2}{c}{CIFAR-10} & \multicolumn{2}{c}{CIFAR-100} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+\textbf{Audit class of the active rewrite} & $n$ & \textbf{Within-run} & $n$ & \textbf{Within-run} \\
+\midrule
+Sound modification & 18 & $-0.06$ & 18 & $+0.55$ \\
+Behaviourally equivalent & 13 & $-0.02$ & 16 & $-0.40$ \\
+Off-grid output & 1 & $-0.52$ & 0 & -- \\
+Raises or hangs & 1 & $+1.91$ & 1 & $-3.52$ \\
+\midrule
+\textit{Clean $-$ defective} & & $+-0.74$ & & $+3.63$ \\
+\bottomrule
+\end{tabular}

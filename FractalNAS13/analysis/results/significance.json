@@ -1,0 +1,1427 @@
+{
+ "alpha": 0.05,
+ "search_value": {
+  "cifar10": {
+   "friedman": {
+    "test": "friedman",
+    "k": 6,
+    "n": 60,
+    "stat": 52.24602792489187,
+    "p": 4.802956657887674e-10,
+    "kendall_w": 0.17415342641630624,
+    "mean_rank": {
+     "GA as run": 3.591666666666667,
+     "GA tuned": 3.75,
+     "Predictor-guided": 4.166666666666667,
+     "Local search": 3.2916666666666665,
+     "Reg. evolution $S{=}3$": 4.133333333333334,
+     "Reg. evolution $S{=}10$": 2.066666666666667
+    }
+   },
+   "tests": {
+    "tuned GA $-$ best screening": {
+     "test": "mann-whitney",
+     "n": 400,
+     "m": 30,
+     "stat": 5811.5,
+     "p": 0.7744437006701372,
+     "rbc": -0.03141666666666665,
+     "g": -0.03731096989700055,
+     "delta": -0.07729787028328872,
+     "p_holm": 0.7744437006701372
+    },
+    "as-run GA $-$ best screening": {
+     "test": "mann-whitney",
+     "n": 400,
+     "m": 30,
+     "stat": 4824.0,
+     "p": 0.07332571269062553,
+     "rbc": -0.19599999999999995,
+     "g": -0.24313214549734166,
+     "delta": -0.4478201276610463,
+     "p_holm": 0.14665142538125106
+    },
+    "tuned GA $-$ as-run GA": {
+     "test": "wilcoxon",
+     "n": 400,
+     "stat": 31109.0,
+     "p": 0.0021213798205069172,
+     "rbc": 0.17977720651242501,
+     "g": 0.1851279513679447,
+     "delta": 0.37052225737776034,
+     "p_holm": 0.006364139461520752
+    },
+    "reg. evolution $-$ tuned GA": {
+     "test": "wilcoxon",
+     "n": 400,
+     "stat": 14178.0,
+     "p": 3.613307367658879e-22,
+     "rbc": 0.5823612583951926,
+     "g": 0.7163280225729658,
+     "delta": 1.4040784267150996,
+     "p_holm": 1.8066536838294395e-21
+    },
+    "reg. evolution $S{=}10$ $-$ $S{=}3$": {
+     "test": "wilcoxon",
+     "n": 400,
+     "stat": 5709.0,
+     "p": 2.2581841901666734e-49,
+     "rbc": 0.8554738427654646,
+     "g": 1.4646500476924824,
+     "delta": 2.6961758905885223,
+     "p_holm": 1.3549105141000041e-48
+    },
+    "local search $-$ as-run GA": {
+     "test": "wilcoxon",
+     "n": 400,
+     "stat": 31249.5,
+     "p": 0.001572410293542417,
+     "rbc": 0.184469439949893,
+     "g": 0.12461397698422176,
+     "delta": 0.3179745448467529,
+     "p_holm": 0.006289641174169668
+    }
+   },
+   "best_screen_n": 520000
+  },
+  "cifar100": {
+   "friedman": {
+    "test": "friedman",
+    "k": 6,
+    "n": 60,
+    "stat": 104.35437589670036,
+    "p": 6.3788778116057385e-21,
+    "kendall_w": 0.34784791965566786,
+    "mean_rank": {
+     "GA as run": 3.783333333333333,
+     "GA tuned": 3.3,
+     "Predictor-guided": 4.8,
+     "Local search": 2.808333333333333,
+     "Reg. evolution $S{=}3$": 4.483333333333333,
+     "Reg. evolution $S{=}10$": 1.825
+    }
+   },
+   "tests": {
+    "tuned GA $-$ best screening": {
+     "test": "mann-whitney",
+     "n": 400,
+     "m": 30,
+     "stat": 7299.0,
+     "p": 0.04750580753798753,
+     "rbc": 0.21649999999999991,
+     "g": 0.19841698246837874,
+     "delta": 0.3337255479247716,
+     "p_holm": 0.09501161507597505
+    },
+    "as-run GA $-$ best screening": {
+     "test": "mann-whitney",
+     "n": 400,
+     "m": 30,
+     "stat": 5868.0,
+     "p": 0.8411803733621536,
+     "rbc": -0.02200000000000002,
+     "g": -0.16366036730495326,
+     "delta": -0.30670265277869646,
+     "p_holm": 0.8411803733621536
+    },
+    "tuned GA $-$ as-run GA": {
+     "test": "wilcoxon",
+     "n": 400,
+     "stat": 26176.5,
+     "p": 7.248434241283452e-07,
+     "rbc": 0.2917613636363636,
+     "g": 0.35125639439711015,
+     "delta": 0.6404282007034648,
+     "p_holm": 2.8993736965133808e-06
+    },
+    "reg. evolution $-$ tuned GA": {
+     "test": "wilcoxon",
+     "n": 400,
+     "stat": 15809.5,
+     "p": 4.007535199638931e-19,
+     "rbc": 0.5368197465758442,
+     "g": 0.681038938746604,
+     "delta": 0.9620618654232144,
+     "p_holm": 2.0037675998194654e-18
+    },
+    "reg. evolution $S{=}10$ $-$ $S{=}3$": {
+     "test": "wilcoxon",
+     "n": 400,
+     "stat": 3322.5,
+     "p": 5.910817364199149e-56,
+     "rbc": 0.915036440352896,
+     "g": 1.6522666216811974,
+     "delta": 2.5046106407423476,
+     "p_holm": 3.5464904185194896e-55
+    },
+    "local search $-$ as-run GA": {
+     "test": "wilcoxon",
+     "n": 400,
+     "stat": 27520.5,
+     "p": 3.838153062848877e-06,
+     "rbc": 0.27065168420215724,
+     "g": -0.02916376127909296,
+     "delta": -0.11030538331293822,
+     "p_holm": 1.1514459188546631e-05
+    }
+   },
+   "best_screen_n": 520000
+  }
+ },
+ "settings": {
+  "cifar10": {
+   "friedman": {
+    "tournament size $k$": {
+     "test": "friedman",
+     "k": 5,
+     "n": 1000,
+     "stat": 140.44546054971477,
+     "p": 2.2660753962123707e-29,
+     "kendall_w": 0.03511136513742869,
+     "mean_rank": {
+      "k=2": 3.4605,
+      "k=3": 3.13,
+      "k=5": 2.792,
+      "k=7": 2.818,
+      "k=10": 2.7995
+     }
+    },
+    "mutation rate $p_m$": {
+     "test": "friedman",
+     "k": 7,
+     "n": 1000,
+     "stat": 2536.10700490469,
+     "p": 0.0,
+     "kendall_w": 0.4226845008174483,
+     "mean_rank": {
+      "pm=0.02": 4.0495,
+      "pm=0.05": 2.8455,
+      "pm=0.08": 2.688,
+      "pm=0.1": 2.784,
+      "pm=0.2": 3.9335,
+      "pm=0.3": 5.4135,
+      "pm=0.4": 6.286
+     }
+    },
+    "population size": {
+     "test": "friedman",
+     "k": 4,
+     "n": 1000,
+     "stat": 139.9858561540762,
+     "p": 3.8063572081264536e-30,
+     "kendall_w": 0.046661952051358736,
+     "mean_rank": {
+      "pop=10": 2.528,
+      "pop=20": 2.15,
+      "pop=40": 2.4915,
+      "pop=52": 2.8305
+     }
+    },
+    "elite count": {
+     "test": "friedman",
+     "k": 6,
+     "n": 1000,
+     "stat": 166.8279662724131,
+     "p": 3.4655771121350717e-34,
+     "kendall_w": 0.03336559325448262,
+     "mean_rank": {
+      "elite=0": 3.902,
+      "elite=1": 3.191,
+      "elite=2": 3.1525,
+      "elite=4": 3.409,
+      "elite=5": 3.414,
+      "elite=8": 3.9315
+     }
+    }
+   },
+   "tests": {
+    "tournament size $k$": {
+     "test": "wilcoxon",
+     "n": 1000,
+     "stat": 198593.0,
+     "p": 4.969466094517143e-06,
+     "rbc": 0.1686373502625834,
+     "g": 0.20680444665437978,
+     "delta": 0.4150887786394982,
+     "best": "k=5",
+     "pipeline": "k=3",
+     "p_holm": 1.987786437806857e-05
+    },
+    "mutation rate $p_m$": {
+     "test": "wilcoxon",
+     "n": 1000,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "best": "pm=0.08",
+     "pipeline": "pm=0.08",
+     "p_holm": 1.0
+    },
+    "population size": {
+     "test": "wilcoxon",
+     "n": 1000,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "best": "pop=20",
+     "pipeline": "pop=20",
+     "p_holm": 1.0
+    },
+    "elite count": {
+     "test": "wilcoxon",
+     "n": 1000,
+     "stat": 216009.0,
+     "p": 0.012812250610230728,
+     "rbc": 0.09201765447667087,
+     "g": 0.11226270648212046,
+     "delta": 0.2258133379750056,
+     "best": "elite=1",
+     "pipeline": "elite=5",
+     "p_holm": 0.03843675183069219
+    }
+   }
+  },
+  "cifar100": {
+   "friedman": {
+    "tournament size $k$": {
+     "test": "friedman",
+     "k": 5,
+     "n": 1000,
+     "stat": 228.9196296106817,
+     "p": 2.2550952330912112e-48,
+     "kendall_w": 0.05722990740267043,
+     "mean_rank": {
+      "k=2": 3.6005,
+      "k=3": 3.122,
+      "k=5": 2.838,
+      "k=7": 2.7035,
+      "k=10": 2.736
+     }
+    },
+    "mutation rate $p_m$": {
+     "test": "friedman",
+     "k": 7,
+     "n": 1000,
+     "stat": 2900.9469613855845,
+     "p": 0.0,
+     "kendall_w": 0.48349116023093075,
+     "mean_rank": {
+      "pm=0.02": 4.1535,
+      "pm=0.05": 2.783,
+      "pm=0.08": 2.546,
+      "pm=0.1": 2.646,
+      "pm=0.2": 3.9795,
+      "pm=0.3": 5.4905,
+      "pm=0.4": 6.4015
+     }
+    },
+    "population size": {
+     "test": "friedman",
+     "k": 4,
+     "n": 1000,
+     "stat": 277.1030917486434,
+     "p": 8.967012699013385e-60,
+     "kendall_w": 0.0923676972495478,
+     "mean_rank": {
+      "pop=10": 2.4155,
+      "pop=20": 2.065,
+      "pop=40": 2.506,
+      "pop=52": 3.0135
+     }
+    },
+    "elite count": {
+     "test": "friedman",
+     "k": 6,
+     "n": 1000,
+     "stat": 297.6573285198585,
+     "p": 3.1937120988465995e-62,
+     "kendall_w": 0.0595314657039717,
+     "mean_rank": {
+      "elite=0": 4.077,
+      "elite=1": 3.1885,
+      "elite=2": 3.0195,
+      "elite=4": 3.294,
+      "elite=5": 3.365,
+      "elite=8": 4.056
+     }
+    }
+   },
+   "tests": {
+    "tournament size $k$": {
+     "test": "wilcoxon",
+     "n": 1000,
+     "stat": 172891.5,
+     "p": 2.47533342327765e-11,
+     "rbc": 0.248820385818561,
+     "g": 0.28228492844882086,
+     "delta": 0.5153015303048464,
+     "best": "k=7",
+     "pipeline": "k=3",
+     "p_holm": 9.9013336931106e-11
+    },
+    "mutation rate $p_m$": {
+     "test": "wilcoxon",
+     "n": 1000,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "best": "pm=0.08",
+     "pipeline": "pm=0.08",
+     "p_holm": 1.0
+    },
+    "population size": {
+     "test": "wilcoxon",
+     "n": 1000,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "best": "pop=20",
+     "pipeline": "pop=20",
+     "p_holm": 1.0
+    },
+    "elite count": {
+     "test": "wilcoxon",
+     "n": 1000,
+     "stat": 191651.5,
+     "p": 5.702407304322985e-06,
+     "rbc": 0.16904483177245924,
+     "g": 0.18691575637831784,
+     "delta": 0.33741823138735205,
+     "best": "elite=2",
+     "pipeline": "elite=5",
+     "p_holm": 1.7107221912968955e-05
+    }
+   }
+  }
+ },
+ "operators": {
+  "cifar10": {
+   "per_rewrite": {
+    "cifar10_deepseek_r1_it1_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 2711.0,
+     "p": 3.064332092429599e-08,
+     "rbc": -0.5212362030905078,
+     "g": -0.6685694430409249,
+     "delta": -1.6982811957269708,
+     "kind": "combine_genes",
+     "p_holm": 8.580129858802877e-07
+    },
+    "cifar10_deepseek_r1_it2_mutate_gene.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 4137.0,
+     "p": 0.022566054478482638,
+     "rbc": -0.21832782239017479,
+     "g": -0.1994310841360828,
+     "delta": -0.4751765715360636,
+     "kind": "mutate_gene",
+     "p_holm": 0.5415853074835832
+    },
+    "cifar10_deepseek_r1_it4__create_random_chromosome.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5414.0,
+     "p": 0.6410397768372567,
+     "rbc": -0.04388520971302428,
+     "g": -0.06112254361036609,
+     "delta": -0.14664713027914056,
+     "kind": "_create_random_chromosome",
+     "p_holm": 1.0
+    },
+    "cifar10_deepseek_r1_it5_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 3814.0,
+     "p": 0.6497677187194686,
+     "rbc": 0.046619172603424575,
+     "g": -0.0007088253520029813,
+     "delta": -0.001631602658706773,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    },
+    "cifar10_deepseek_r2_it1_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 1138.0,
+     "p": 2.0834111001290566e-17,
+     "rbc": 0.7990286975717439,
+     "g": 1.0533096558288535,
+     "delta": 2.440062386233973,
+     "kind": "combine_genes",
+     "p_holm": 6.250233300387169e-16
+    },
+    "cifar10_deepseek_r2_it2_mutate_gene.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 4997.0,
+     "p": 0.32326834026312323,
+     "rbc": -0.09359695265735535,
+     "g": -0.030194573769971065,
+     "delta": -0.0738605364081828,
+     "kind": "mutate_gene",
+     "p_holm": 1.0
+    },
+    "cifar10_deepseek_r2_it4__create_random_chromosome.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5414.0,
+     "p": 0.6410397768372567,
+     "rbc": -0.04388520971302428,
+     "g": -0.06112254361036609,
+     "delta": -0.14664713027914056,
+     "kind": "_create_random_chromosome",
+     "p_holm": 1.0
+    },
+    "cifar10_deepseek_r2_it5_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 3716.0,
+     "p": 0.0002601044060719076,
+     "rbc": 0.3437527593818985,
+     "g": 0.37660313164343145,
+     "delta": 0.8931407538916976,
+     "kind": "combine_genes",
+     "p_holm": 0.007022818963941505
+    },
+    "cifar10_deepseek_r3_it2_mutate_gene.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5054.0,
+     "p": 0.5428241486065374,
+     "rbc": 0.05805609915198956,
+     "g": 0.06853971452584692,
+     "delta": 0.16139456468354382,
+     "kind": "mutate_gene",
+     "p_holm": 1.0
+    },
+    "cifar10_deepseek_r3_it4__create_random_chromosome.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5414.0,
+     "p": 0.6410397768372567,
+     "rbc": -0.04388520971302428,
+     "g": -0.06112254361036609,
+     "delta": -0.14664713027914056,
+     "kind": "_create_random_chromosome",
+     "p_holm": 1.0
+    },
+    "cifar10_mistral_r1_it1_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    },
+    "cifar10_mistral_r1_it2_mutate_gene.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 4551.0,
+     "p": 0.1433148338686793,
+     "rbc": -0.14010392064241853,
+     "g": -0.14603416965209856,
+     "delta": -0.3512330418586361,
+     "kind": "mutate_gene",
+     "p_holm": 1.0
+    },
+    "cifar10_mistral_r1_it5_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    },
+    "cifar10_mistral_r2_it1_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5612.0,
+     "p": 0.9245133279257726,
+     "rbc": 0.00891832229580574,
+     "g": -0.015793117437191525,
+     "delta": -0.03771005043575864,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    },
+    "cifar10_mistral_r2_it3_select_competitor.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 3817.0,
+     "p": 0.000534983156706733,
+     "rbc": 0.325916114790287,
+     "g": 0.39470876006742533,
+     "delta": 0.9530655500100152,
+     "kind": "select_competitor",
+     "p_holm": 0.013909562074375059
+    },
+    "cifar10_mistral_r3_it1_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 4447.0,
+     "p": 0.07275157736850646,
+     "rbc": -0.171186282732271,
+     "g": -0.21268557303445057,
+     "delta": -0.509358622690837,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    },
+    "cifar10_mistral_r3_it2_mutate_gene.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "kind": "mutate_gene",
+     "p_holm": 1.0
+    },
+    "cifar10_mistral_r3_it5_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 3800.0,
+     "p": 0.009335642662813939,
+     "rbc": -0.25145277257953313,
+     "g": -0.29761334165717607,
+     "delta": -0.7361149409955707,
+     "kind": "combine_genes",
+     "p_holm": 0.23339106657034847
+    },
+    "cifar10_qwen_r1_it1_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 1989.0,
+     "p": 0.8139093111629988,
+     "rbc": -0.02857142857142857,
+     "g": -0.02191632548966377,
+     "delta": -0.05439803467265904,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    },
+    "cifar10_qwen_r1_it2_mutate_gene.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "kind": "mutate_gene",
+     "p_holm": 1.0
+    },
+    "cifar10_qwen_r1_it3_select_competitor.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 1988.0,
+     "p": 5.415278337371533e-12,
+     "rbc": -0.6489183222958057,
+     "g": -0.9682899622548071,
+     "delta": -2.560814641317055,
+     "kind": "select_competitor",
+     "p_holm": 1.5704307178377444e-10
+    },
+    "cifar10_qwen_r1_it4__create_random_chromosome.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 792.0,
+     "p": 6.348610238019523e-20,
+     "rbc": -0.8601324503311258,
+     "g": -1.4812530992669226,
+     "delta": -3.624688348066047,
+     "kind": "_create_random_chromosome",
+     "p_holm": 1.968069173786052e-18
+    },
+    "cifar10_qwen_r1_it5_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5580.0,
+     "p": 0.9886598717641352,
+     "rbc": 0.0013422818791946308,
+     "g": -0.08024148705186966,
+     "delta": -0.1932146245652776,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    },
+    "cifar10_qwen_r2_it2_mutate_gene.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5475.0,
+     "p": 0.8311722758075188,
+     "rbc": -0.020134228187919462,
+     "g": -0.03677721995378078,
+     "delta": -0.08958623048371692,
+     "kind": "mutate_gene",
+     "p_holm": 1.0
+    },
+    "cifar10_qwen_r2_it3_select_competitor.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5433.0,
+     "p": 0.6667614517416149,
+     "rbc": 0.04052980132450331,
+     "g": 0.05891914120592871,
+     "delta": 0.15160567647326104,
+     "kind": "select_competitor",
+     "p_holm": 1.0
+    },
+    "cifar10_qwen_r2_it4__create_random_chromosome.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5540.0,
+     "p": 0.8182166170264333,
+     "rbc": 0.02163355408388521,
+     "g": 0.024709709992051895,
+     "delta": 0.0593504461241713,
+     "kind": "_create_random_chromosome",
+     "p_holm": 1.0
+    },
+    "cifar10_qwen_r3_it1_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    },
+    "cifar10_qwen_r3_it2_mutate_gene.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5475.0,
+     "p": 0.8311722758075188,
+     "rbc": -0.020134228187919462,
+     "g": -0.03677721995378078,
+     "delta": -0.08958623048371692,
+     "kind": "mutate_gene",
+     "p_holm": 1.0
+    },
+    "cifar10_qwen_r3_it3_select_competitor.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5624.0,
+     "p": 0.9424147169215815,
+     "rbc": -0.0067991169977924945,
+     "g": 0.014356158262224441,
+     "delta": 0.0356874101723263,
+     "kind": "select_competitor",
+     "p_holm": 1.0
+    },
+    "cifar10_qwen_r3_it4__create_random_chromosome.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5540.0,
+     "p": 0.8182166170264333,
+     "rbc": 0.02163355408388521,
+     "g": 0.024709709992051895,
+     "delta": 0.0593504461241713,
+     "kind": "_create_random_chromosome",
+     "p_holm": 1.0
+    },
+    "cifar10_qwen_r3_it5_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    }
+   },
+   "by_kind": {
+    "Crossover": {
+     "test": "wilcoxon (one sample)",
+     "n": 13,
+     "stat": 16.0,
+     "p": 0.49609375,
+     "mean": 0.007884159106145372,
+     "ci_lo": -0.44941681379469167,
+     "ci_hi": 0.5204371944372468,
+     "n_positive": 2,
+     "n_holm_sig": 3,
+     "p_holm": 0.9921875
+    },
+    "Mutation": {
+     "test": "wilcoxon (one sample)",
+     "n": 8,
+     "stat": 4.0,
+     "p": 0.21875,
+     "mean": -0.11475600576084657,
+     "ci_lo": -0.2517587574708637,
+     "ci_hi": 0.008719516498933877,
+     "n_positive": 1,
+     "n_holm_sig": 0,
+     "p_holm": 0.65625
+    },
+    "Initialization": {
+     "test": "wilcoxon (one sample)",
+     "n": 6,
+     "stat": 3.0,
+     "p": 0.125,
+     "mean": -0.6576548077758543,
+     "ci_lo": -1.851334809772042,
+     "ci_hi": -0.009315412676932653,
+     "n_positive": 2,
+     "n_holm_sig": 1,
+     "p_holm": 0.5
+    },
+    "Selection": {
+     "test": "wilcoxon (one sample)",
+     "n": 4,
+     "stat": 4.0,
+     "p": 0.875,
+     "mean": -0.3551140011653631,
+     "ci_lo": -1.882709561869476,
+     "ci_hi": 0.723721015050593,
+     "n_positive": 3,
+     "n_holm_sig": 2,
+     "p_holm": 0.9921875
+    }
+   },
+   "deltas_by_kind": {
+    "Crossover": [
+     -1.6982811957269708,
+     -0.001631602658706773,
+     2.440062386233973,
+     0.8931407538916976,
+     0.0,
+     0.0,
+     -0.03771005043575864,
+     -0.509358622690837,
+     -0.7361149409955707,
+     -0.05439803467265904,
+     -0.1932146245652776,
+     0.0,
+     0.0
+    ],
+    "Mutation": [
+     -0.4751765715360636,
+     -0.0738605364081828,
+     0.16139456468354382,
+     -0.3512330418586361,
+     0.0,
+     0.0,
+     -0.08958623048371692,
+     -0.08958623048371692
+    ],
+    "Initialization": [
+     -0.14664713027914056,
+     -0.14664713027914056,
+     -0.14664713027914056,
+     -3.624688348066047,
+     0.0593504461241713,
+     0.0593504461241713
+    ],
+    "Selection": [
+     0.9530655500100152,
+     -2.560814641317055,
+     0.15160567647326104,
+     0.0356874101723263
+    ]
+   },
+   "n_rewrites": 31,
+   "n_holm_sig": 6,
+   "n_holm_sig_pos": 3,
+   "kruskal": {
+    "test": "kruskal-wallis",
+    "k": 4,
+    "stat": 1.5777518882824797,
+    "p": 0.6644448844693711
+   }
+  },
+  "cifar100": {
+   "per_rewrite": {
+    "cifar100_deepseek_r1_it1_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 2057.0,
+     "p": 1.7009801887665498e-10,
+     "rbc": -0.6113367973547473,
+     "g": -0.674783812104461,
+     "delta": -1.7800585490367833,
+     "kind": "combine_genes",
+     "p_holm": 5.443136604052959e-09
+    },
+    "cifar100_deepseek_r1_it2_mutate_gene.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5146.0,
+     "p": 0.9967842351111073,
+     "rbc": 0.0003885003885003885,
+     "g": -0.006389998712858251,
+     "delta": -0.015992600336996125,
+     "kind": "mutate_gene",
+     "p_holm": 1.0
+    },
+    "cifar100_deepseek_r1_it4__create_random_chromosome.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5101.0,
+     "p": 0.2921080156484893,
+     "rbc": 0.09916114790286976,
+     "g": 0.11525809644589614,
+     "delta": 0.29143668413008655,
+     "kind": "_create_random_chromosome",
+     "p_holm": 1.0
+    },
+    "cifar100_deepseek_r1_it5_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 2057.0,
+     "p": 1.7009801887665498e-10,
+     "rbc": -0.6113367973547473,
+     "g": -0.674783812104461,
+     "delta": -1.7800585490367833,
+     "kind": "combine_genes",
+     "p_holm": 5.443136604052959e-09
+    },
+    "cifar100_deepseek_r2_it1_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 522.0,
+     "p": 7.305516025162717e-21,
+     "rbc": -0.9,
+     "g": -1.4864534723468903,
+     "delta": -4.233662308417138,
+     "kind": "combine_genes",
+     "p_holm": 2.483875448555324e-19
+    },
+    "cifar100_deepseek_r2_it2_mutate_gene.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5456.0,
+     "p": 0.8032020947514946,
+     "rbc": 0.023534675615212528,
+     "g": 0.012952550719294008,
+     "delta": 0.03325295805008305,
+     "kind": "mutate_gene",
+     "p_holm": 1.0
+    },
+    "cifar100_deepseek_r2_it4__create_random_chromosome.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5101.0,
+     "p": 0.2921080156484893,
+     "rbc": 0.09916114790286976,
+     "g": 0.11525809644589614,
+     "delta": 0.29143668413008655,
+     "kind": "_create_random_chromosome",
+     "p_holm": 1.0
+    },
+    "cifar100_deepseek_r2_it5_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 522.0,
+     "p": 7.305516025162717e-21,
+     "rbc": -0.9,
+     "g": -1.4864534723468903,
+     "delta": -4.233662308417138,
+     "kind": "combine_genes",
+     "p_holm": 2.483875448555324e-19
+    },
+    "cifar100_deepseek_r3_it1_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    },
+    "cifar100_deepseek_r3_it2_mutate_gene.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "kind": "mutate_gene",
+     "p_holm": 1.0
+    },
+    "cifar100_deepseek_r3_it4__create_random_chromosome.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5101.0,
+     "p": 0.2921080156484893,
+     "rbc": 0.09916114790286976,
+     "g": 0.11525809644589614,
+     "delta": 0.29143668413008655,
+     "kind": "_create_random_chromosome",
+     "p_holm": 1.0
+    },
+    "cifar100_deepseek_r3_it5_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    },
+    "cifar100_mistral_r1_it1_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    },
+    "cifar100_mistral_r1_it2_mutate_gene.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 4273.0,
+     "p": 0.07785178527925728,
+     "rbc": 0.16996891996891997,
+     "g": 0.18457854894629452,
+     "delta": 0.47154901421564865,
+     "kind": "mutate_gene",
+     "p_holm": 1.0
+    },
+    "cifar100_mistral_r2_it1_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5064.0,
+     "p": 0.4683513027531847,
+     "rbc": -0.06894649751792609,
+     "g": -0.054892868078228595,
+     "delta": -0.12939173672824741,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    },
+    "cifar100_mistral_r2_it2_mutate_gene.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5333.0,
+     "p": 0.837587948493205,
+     "rbc": -0.019488876631733775,
+     "g": -0.03543915503435027,
+     "delta": -0.09326766896082204,
+     "kind": "mutate_gene",
+     "p_holm": 1.0
+    },
+    "cifar100_mistral_r2_it3_select_competitor.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 3913.0,
+     "p": 0.0010289793140363347,
+     "rbc": 0.308962472406181,
+     "g": 0.3898866360268023,
+     "delta": 0.9128879599732989,
+     "kind": "select_competitor",
+     "p_holm": 0.029840400107053706
+    },
+    "cifar100_mistral_r2_it4__create_random_chromosome.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 4781.0,
+     "p": 0.09814679616866369,
+     "rbc": -0.15567328918322296,
+     "g": -0.2154772442661851,
+     "delta": -0.5201609687227022,
+     "kind": "_create_random_chromosome",
+     "p_holm": 1.0
+    },
+    "cifar100_mistral_r2_it5_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5143.0,
+     "p": 0.47877124294141415,
+     "rbc": -0.06711409395973154,
+     "g": -0.08235333250364044,
+     "delta": -0.19327506125806868,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    },
+    "cifar100_mistral_r3_it1_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 4129.0,
+     "p": 0.1217605334459543,
+     "rbc": -0.1512846865364851,
+     "g": -0.1535229026663336,
+     "delta": -0.394581805508296,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    },
+    "cifar100_mistral_r3_it4__create_random_chromosome.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5101.0,
+     "p": 0.2921080156484893,
+     "rbc": 0.09916114790286976,
+     "g": 0.11525809644589614,
+     "delta": 0.29143668413008655,
+     "kind": "_create_random_chromosome",
+     "p_holm": 1.0
+    },
+    "cifar100_qwen_r1_it1_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 1373.0,
+     "p": 0.6412428885767685,
+     "rbc": 0.06151742993848257,
+     "g": 0.002559703119476303,
+     "delta": 0.006291409395943362,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    },
+    "cifar100_qwen_r1_it2_mutate_gene.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "kind": "mutate_gene",
+     "p_holm": 1.0
+    },
+    "cifar100_qwen_r1_it3_select_competitor.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 3913.0,
+     "p": 0.0010289793140363347,
+     "rbc": 0.308962472406181,
+     "g": 0.3898866360268023,
+     "delta": 0.9128879599732989,
+     "kind": "select_competitor",
+     "p_holm": 0.029840400107053706
+    },
+    "cifar100_qwen_r1_it4__create_random_chromosome.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 4079.0,
+     "p": 0.0029680741106865656,
+     "rbc": 0.2796467991169978,
+     "g": 0.3679092586826629,
+     "delta": 0.8633213505355474,
+     "kind": "_create_random_chromosome",
+     "p_holm": 0.08013800098853727
+    },
+    "cifar100_qwen_r1_it5_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 1373.0,
+     "p": 0.6412428885767685,
+     "rbc": 0.06151742993848257,
+     "g": 0.002559703119476303,
+     "delta": 0.006291409395943362,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    },
+    "cifar100_qwen_r2_it2_mutate_gene.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "kind": "mutate_gene",
+     "p_holm": 1.0
+    },
+    "cifar100_qwen_r2_it3_select_competitor.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5137.0,
+     "p": 0.324150854500208,
+     "rbc": 0.09280353200883003,
+     "g": 0.08401672069544044,
+     "delta": 0.21886617984234136,
+     "kind": "select_competitor",
+     "p_holm": 1.0
+    },
+    "cifar100_qwen_r2_it4__create_random_chromosome.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 5376.0,
+     "p": 0.5908928598208717,
+     "rbc": 0.050596026490066226,
+     "g": 0.062473046549830824,
+     "delta": 0.1586137751990836,
+     "kind": "_create_random_chromosome",
+     "p_holm": 1.0
+    },
+    "cifar100_qwen_r3_it1_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    },
+    "cifar100_qwen_r3_it2_mutate_gene.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 4502.0,
+     "p": 0.05295006943427058,
+     "rbc": 0.18338472700888808,
+     "g": 0.17987902135986492,
+     "delta": 0.44721253494645263,
+     "kind": "mutate_gene",
+     "p_holm": 1.0
+    },
+    "cifar100_qwen_r3_it3_select_competitor.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 2633.0,
+     "p": 1.3152832450931998e-08,
+     "rbc": 0.5350110375275938,
+     "g": 0.7207860465584021,
+     "delta": 1.756799693758935,
+     "kind": "select_competitor",
+     "p_holm": 3.9458497352795994e-07
+    },
+    "cifar100_qwen_r3_it4__create_random_chromosome.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 4882.0,
+     "p": 0.14308334650199003,
+     "rbc": 0.1378366445916115,
+     "g": 0.1361262751110916,
+     "delta": 0.34113547942870637,
+     "kind": "_create_random_chromosome",
+     "p_holm": 1.0
+    },
+    "cifar100_qwen_r3_it5_combine_genes.py": {
+     "test": "wilcoxon",
+     "n": 150,
+     "stat": 0.0,
+     "p": 1.0,
+     "rbc": 0.0,
+     "g": 0.0,
+     "delta": 0.0,
+     "kind": "combine_genes",
+     "p_holm": 1.0
+    }
+   },
+   "by_kind": {
+    "Crossover": {
+     "test": "wilcoxon (one sample)",
+     "n": 14,
+     "stat": 3.0,
+     "p": 0.02054385339794816,
+     "mean": -0.9094362499721834,
+     "ci_lo": -1.7649794069433091,
+     "ci_hi": -0.199629165209567,
+     "n_positive": 2,
+     "n_holm_sig": 4,
+     "p_holm": 0.08217541359179265
+    },
+    "Mutation": {
+     "test": "wilcoxon (one sample)",
+     "n": 8,
+     "stat": 4.0,
+     "p": 0.4375,
+     "mean": 0.10534427973929578,
+     "ci_lo": -0.021159372526069645,
+     "ci_hi": 0.26784937572143014,
+     "n_positive": 3,
+     "n_holm_sig": 0,
+     "p_holm": 0.4375
+    },
+    "Initialization": {
+     "test": "wilcoxon (one sample)",
+     "n": 8,
+     "stat": 7.0,
+     "p": 0.1484375,
+     "mean": 0.2510820466201227,
+     "ci_lo": -0.01709060048142963,
+     "ci_hi": 0.48929057041575896,
+     "n_positive": 7,
+     "n_holm_sig": 0,
+     "p_holm": 0.375
+    },
+    "Selection": {
+     "test": "wilcoxon (one sample)",
+     "n": 4,
+     "stat": 0.0,
+     "p": 0.125,
+     "mean": 0.9503604483869685,
+     "ci_lo": 0.3923716248750807,
+     "ci_hi": 1.545821760312526,
+     "n_positive": 4,
+     "n_holm_sig": 3,
+     "p_holm": 0.375
+    }
+   },
+   "deltas_by_kind": {
+    "Crossover": [
+     -1.7800585490367833,
+     -1.7800585490367833,
+     -4.233662308417138,
+     -4.233662308417138,
+     0.0,
+     0.0,
+     0.0,
+     -0.12939173672824741,
+     -0.19327506125806868,
+     -0.394581805508296,
+     0.006291409395943362,
+     0.006291409395943362,
+     0.0,
+     0.0
+    ],
+    "Mutation": [
+     -0.015992600336996125,
+     0.03325295805008305,
+     0.0,
+     0.47154901421564865,
+     -0.09326766896082204,
+     0.0,
+     0.0,
+     0.44721253494645263
+    ],
+    "Initialization": [
+     0.29143668413008655,
+     0.29143668413008655,
+     0.29143668413008655,
+     -0.5201609687227022,
+     0.29143668413008655,
+     0.8633213505355474,
+     0.1586137751990836,
+     0.34113547942870637
+    ],
+    "Selection": [
+     0.9128879599732989,
+     0.9128879599732989,
+     0.21886617984234136,
+     1.756799693758935
+    ]
+   },
+   "n_rewrites": 34,
+   "n_holm_sig": 7,
+   "n_holm_sig_pos": 3,
+   "kruskal": {
+    "test": "kruskal-wallis",
+    "k": 4,
+    "stat": 17.559334075649797,
+    "p": 0.0005421677121316324
+   }
+  },
+  "pooled_by_kind": {
+   "Mutation": {
+    "test": "wilcoxon (one sample, datasets pooled)",
+    "n": 16,
+    "stat": 28.0,
+    "p": 0.6564830647348954,
+    "mean": -0.004705863010775399,
+    "ci_lo": -0.11345643942984182,
+    "ci_hi": 0.1081906801175309,
+    "n_positive": 4,
+    "sign_test_p": 0.076812744140625,
+    "min_attainable_p": 3.0517578125e-05,
+    "perm": {
+     "test": "stratified sign permutation",
+     "n": 16,
+     "stat": -0.004705863010775399,
+     "p": 0.9228515625,
+     "exact": true,
+     "n_perm": 65536
+    },
+    "p_holm": 0.7218112737386913,
+    "perm_p_holm": 1.0,
+    "tests_agree": true
+   },
+   "Crossover": {
+    "test": "wilcoxon (one sample, datasets pooled)",
+    "n": 27,
+    "stat": 33.0,
+    "p": 0.02218373260387221,
+    "mean": -0.46776346041595107,
+    "ci_lo": -1.0024584384423536,
+    "ci_hi": -0.003716761655023714,
+    "n_positive": 4,
+    "sign_test_p": 0.000310748815536499,
+    "min_attainable_p": 1.4901161193847656e-08,
+    "perm": {
+     "test": "stratified sign permutation",
+     "n": 27,
+     "stat": -0.450776045433019,
+     "p": 0.09076954615226925,
+     "exact": false,
+     "n_perm": 200000
+    },
+    "p_holm": 0.08873493041548884,
+    "perm_p_holm": 0.363078184609077,
+    "tests_agree": true
+   },
+   "Selection": {
+    "test": "wilcoxon (one sample, datasets pooled)",
+    "n": 8,
+    "stat": 8.0,
+    "p": 0.1875,
+    "mean": 0.29762322361080273,
+    "ci_lo": -0.6400898405193765,
+    "ci_hi": 1.0142373521134012,
+    "n_positive": 7,
+    "sign_test_p": 0.0703125,
+    "min_attainable_p": 0.0078125,
+    "perm": {
+     "test": "stratified sign permutation",
+     "n": 8,
+     "stat": 0.29762322361080273,
+     "p": 0.5078125,
+     "exact": true,
+     "n_perm": 256
+    },
+    "p_holm": 0.5625,
+    "perm_p_holm": 1.0,
+    "tests_agree": true
+   },
+   "Initialization": {
+    "test": "wilcoxon (one sample, datasets pooled)",
+    "n": 14,
+    "stat": 38.0,
+    "p": 0.3609056368693456,
+    "mean": -0.1383766052638675,
+    "ci_lo": -0.745762180969056,
+    "ci_hi": 0.26011179921991573,
+    "n_positive": 9,
+    "sign_test_p": 0.4239501953125,
+    "min_attainable_p": 0.0001220703125,
+    "perm": {
+     "test": "stratified sign permutation",
+     "n": 14,
+     "stat": -0.2032863805778658,
+     "p": 0.882080078125,
+     "exact": true,
+     "n_perm": 16384
+    },
+    "p_holm": 0.7218112737386913,
+    "perm_p_holm": 1.0,
+    "tests_agree": true
+   }
+  }
+ }
+}

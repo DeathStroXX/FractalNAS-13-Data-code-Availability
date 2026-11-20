@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{The 68 accepted rewrites, reconciled. \emph{Accepted} is what the pipeline's own gate admitted; \emph{in space} is what never leaves the grid and so can be replayed faithfully (3 of the 68 do not: 2 raise or fail to terminate, 0 leave the space, 1 land off the grid); \emph{replayed} is what \texttt{s20\_operator\_bench.py} measured. $\Delta$ is the class mean of the per-rewrite effect against the operator it replaced in the pipeline, as Section~\ref{sec:terms} defines it, with the standard error over that class. Produced by \texttt{analysis/s38\_gate.py}.}
+\label{tab:inventory}
+\footnotesize
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{l rrr rr}
+\toprule
+& & & & \multicolumn{2}{c}{$\Delta$ best found (pts)} \\
+\cmidrule(lr){5-6}
+Operator replaced & accepted & in space & replayed & CIFAR-10 & CIFAR-100 \\
+\midrule
+Mutation & 17 & 16 & 16 & $-0.11\!\pm\!0.07$ & $+0.11\!\pm\!0.07$ \\
+Initialization & 14 & 14 & 14 & $-0.66\!\pm\!0.54$ & $+0.25\!\pm\!0.12$ \\
+Selection & 9 & 8 & 8 & $-0.36\!\pm\!0.66$ & $+0.95\!\pm\!0.27$ \\
+Crossover & 28 & 27 & 27 & $+0.01\!\pm\!0.25$ & $-0.91\!\pm\!0.40$ \\
+\midrule
+\textit{Total} & \textit{68} & \textit{65} & \textit{65} & & \\
+\bottomrule
+\end{tabular}}
+\end{table}

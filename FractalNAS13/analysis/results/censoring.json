@@ -1,0 +1,66 @@
+{
+ "by_config": {
+  "baseline/cifar10": {
+   "attempts": 945,
+   "floor": 64,
+   "rate": 0.06772486772486773
+  },
+  "frozen/cifar10": {
+   "attempts": 1841,
+   "floor": 294,
+   "rate": 0.1596958174904943
+  },
+  "qwen/cifar10": {
+   "attempts": 1146,
+   "floor": 132,
+   "rate": 0.11518324607329843
+  },
+  "deepseek/cifar10": {
+   "attempts": 1046,
+   "floor": 136,
+   "rate": 0.13001912045889102
+  },
+  "mistral/cifar10": {
+   "attempts": 1125,
+   "floor": 159,
+   "rate": 0.14133333333333334
+  },
+  "baseline/cifar100": {
+   "attempts": 979,
+   "floor": 203,
+   "rate": 0.20735444330949948
+  },
+  "frozen/cifar100": {
+   "attempts": 1854,
+   "floor": 413,
+   "rate": 0.22276159654800431
+  },
+  "qwen/cifar100": {
+   "attempts": 1104,
+   "floor": 257,
+   "rate": 0.23278985507246377
+  },
+  "deepseek/cifar100": {
+   "attempts": 1044,
+   "floor": 262,
+   "rate": 0.2509578544061303
+  },
+  "mistral/cifar100": {
+   "attempts": 1231,
+   "floor": 319,
+   "rate": 0.25913891145410234
+  }
+ },
+ "total": {
+  "attempts": 12315,
+  "floor": 2239
+ },
+ "cifar10": {
+  "min": 0.06772486772486773,
+  "max": 0.1596958174904943
+ },
+ "cifar100": {
+  "min": 0.20735444330949948,
+  "max": 0.25913891145410234
+ }
+}

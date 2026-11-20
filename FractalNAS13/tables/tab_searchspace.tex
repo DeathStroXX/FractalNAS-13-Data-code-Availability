@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\caption{The FractalNet search space: 13 genes, $4.2\times10^{7}$ points in all. This is the grid the original study fixed and the grid FractalNAS-13 covers. Generated from \texttt{analysis/surrogate.py}, which is the single definition every script uses.}
+\label{tab:sm_searchspace}
+\footnotesize
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{l l l}
+\toprule
+\textbf{Category} & \textbf{Gene} & \textbf{Values} \\
+\midrule
+\multirow{2}{*}{Structural depth} & $n\_columns$ & $\{2, 3, 4\}$ \\
+ & $n\_blocks$ & $\{2, 3, 4\}$ \\
+Channel width & $base\_channels$ & $\{16, 32, 64\}$ \\
+\multirow{2}{*}{Regularization} & $dropout$ & $\{0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5\}$ \\
+ & $fc\_dropout$ & $\{0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5\}$ \\
+\multirow{2}{*}{Optimization} & $lr$ & $\{0.001, 0.002, 0.003, 0.004, 0.005, 0.006, 0.008, 0.01\}$ \\
+ & $momentum$ & $\{0.75, 0.8, 0.85, 0.88, 0.9, 0.92, 0.95, 0.98\}$ \\
+\multirow{6}{*}{Categorical} & Activation & ReLU, GELU, LeakyReLU, SiLU \\
+ & Kernel size & $\{1, 3, 5, 7\}$ \\
+ & Pooling & Max, Avg \\
+ & Convolution & Standard, Depthwise \\
+ & Normalization & BatchNorm, InstanceNorm \\
+ & Optimizer & SGD, AdamW, RMSprop \\
+\bottomrule
+\end{tabular}}
+\end{table}

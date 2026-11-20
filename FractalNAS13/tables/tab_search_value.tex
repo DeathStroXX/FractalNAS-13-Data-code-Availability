@@ -1,0 +1,41 @@
+\begin{table}[t]
+\centering
+\caption{What the search is worth once the free surrogate exists. Every policy
+trains the same number of architectures, 520; only the way they are chosen differs.
+Entries are \emph{differences} in benchmark score against the GA at the settings the
+original study fixed, measured on the identical landscape from the same seeds. A
+benchmark score is an estimate on the accuracy scale and not an accuracy: the best
+3-epoch accuracy anywhere in the record is 84.80 on CIFAR-10 and
+50.72 on CIFAR-100, and outside the sampled region the landscape
+extrapolates above it, so the absolute levels are reported only in Supplementary
+Table~S3. Screening a large free sample beats the GA as run; only the \emph{tuned}
+GA beats screening. Regularized evolution, whose defaults already sit at the
+selection pressure and per-gene mutation rate Table~\ref{tab:settings} recommends,
+beats both; at the study's own selection pressure ($S{=}3$) it does not.
+Differences are tested in Table~\ref{tab:tests}.}
+\label{tab:searchvalue}
+\footnotesize
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lrr}
+\toprule
+& \multicolumn{2}{c}{$\Delta$ against the GA as run (pts)} \\
+\cmidrule(lr){2-3}
+Policy (520 measured architectures) & CIFAR-10 & CIFAR-100 \\
+\midrule
+GA as run ($k{=}3$, $p_m{=}0.08$, 5 elites) \emph{(reference)} & $0.00$ & $0.00$ \\
+\midrule
+Random sample, no surrogate & $-10.02$ & $-10.60$ \\
+Screen 1{,}040 free{,} measure the best 520 & $-7.98$ & $-8.77$ \\
+Screen 5{,}200 free{,} measure the best 520 & $-4.75$ & $-5.38$ \\
+Screen 52{,}000 free{,} measure the best 520 & $-1.80$ & $-2.23$ \\
+Screen 520{,}000 free{,} measure the best 520 & $+0.45$ & $+0.31$ \\
+\midrule
+GA tuned (best $k$: 5 and 7) & $+0.37$ & $+0.64$ \\
+\midrule
+Predictor-guided search & $-0.42$ & $-0.96$ \\
+Local search & $+0.32$ & $-0.11$ \\
+Regularized evolution ($S{=}3$) & $-0.92$ & $-0.90$ \\
+Regularized evolution ($S{=}10$, default) & $+1.77$ & $+1.60$ \\
+\bottomrule
+\end{tabular}}
+\end{table}

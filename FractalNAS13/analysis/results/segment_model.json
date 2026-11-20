@@ -1,0 +1,95 @@
+{
+ "cifar10": {
+  "n_segments": 33,
+  "n_runs": 9,
+  "by_cat": {
+   "modified": {
+    "n": 18,
+    "raw": 80.2472222222222,
+    "within_run": -0.05927777777777502,
+    "sd": 2.2940593280508867
+   },
+   "equivalent": {
+    "n": 13,
+    "raw": 80.41846153846154,
+    "within_run": -0.024743589743594568,
+    "sd": 1.683376308940351
+   },
+   "off-grid": {
+    "n": 1,
+    "raw": 80.24,
+    "within_run": -0.5233333333333405,
+    "sd": 0.0
+   },
+   "raises/hangs": {
+    "n": 1,
+    "raw": 83.13,
+    "within_run": 1.9120000000000061,
+    "sd": 0.0
+   }
+  },
+  "defect_cost": {
+   "delta": -0.7391290322580644,
+   "n_defect": 2,
+   "n_clean": 31,
+   "p": 0.592470376481176
+  },
+  "modified_vs_equivalent": {
+   "delta": -0.03453418803418046,
+   "p": 0.9656017199140043,
+   "n_mod": 18,
+   "n_eq": 13
+  },
+  "reward_vs_outcome_rho": 0.3974520545608537,
+  "reward_by_cat": {
+   "modified": 8.416851861111112,
+   "equivalent": 4.579871807692306,
+   "off-grid": 0.44833350000000005,
+   "raises/hangs": 4.203333499999981
+  },
+  "mixedlm": "unavailable: LinAlgError"
+ },
+ "cifar100": {
+  "n_segments": 35,
+  "n_runs": 9,
+  "by_cat": {
+   "modified": {
+    "n": 18,
+    "raw": 39.94722222222222,
+    "within_run": 0.5539537037037054,
+    "sd": 5.040495912675275
+   },
+   "equivalent": {
+    "n": 16,
+    "raw": 40.134375,
+    "within_run": -0.40298958333333434,
+    "sd": 5.075301828212874
+   },
+   "raises/hangs": {
+    "n": 1,
+    "raw": 37.24,
+    "within_run": -3.5233333333333263,
+    "sd": 0.0
+   }
+  },
+  "defect_cost": {
+   "delta": 3.626960784313719,
+   "n_defect": 1,
+   "n_clean": 34,
+   "p": 0.48202589870506474
+  },
+  "modified_vs_equivalent": {
+   "delta": 0.9569432870370398,
+   "p": 0.5945202739863007,
+   "n_mod": 18,
+   "n_eq": 16
+  },
+  "reward_vs_outcome_rho": 0.11826670968844544,
+  "reward_by_cat": {
+   "modified": 13.069351888888889,
+   "equivalent": 8.27489584375,
+   "raises/hangs": 0.455
+  },
+  "mixedlm": "unavailable: LinAlgError"
+ }
+}

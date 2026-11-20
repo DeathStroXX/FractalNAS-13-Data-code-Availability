@@ -1,0 +1,15 @@
+\begin{tabular}{l rr rr}
+\toprule
+& \multicolumn{2}{c}{CIFAR-10} & \multicolumn{2}{c}{CIFAR-100} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+& \textbf{measured} & \textbf{held out} & \textbf{measured} & \textbf{held out} \\
+\midrule
+\multicolumn{5}{l}{\textit{Outcome of each held-out run (Spearman over runs, MAE in points)}} \\
+Agreement $\rho$ & \multicolumn{2}{c}{0.515} & \multicolumn{2}{c}{0.730} \\
+Mean absolute error & \multicolumn{2}{c}{3.61} & \multicolumn{2}{c}{4.35} \\
+\midrule
+\multicolumn{5}{l}{\textit{The two contrasts the record supports (points, Hedges' $g$ in brackets)}} \\
+schedule (restart $-$ one long run) & $-1.55$ [-0.83] & $-3.22$ [-0.78] & $-1.38$ [-0.35] & $-0.14$ [-0.05] \\
+operator loop (LLM $-$ frozen) & $+0.79$ [+0.63] & $+1.83$ [+0.54] & $+0.87$ [+0.22] & $+1.38$ [+0.42] \\
+\bottomrule
+\end{tabular}

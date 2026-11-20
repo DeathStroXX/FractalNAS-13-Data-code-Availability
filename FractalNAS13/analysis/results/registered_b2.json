@@ -1,0 +1,12 @@
+{
+ "file": "analysis/confirm/registered_b2_mutate_gene.py",
+ "r": 150,
+ "cifar10": {
+  "delta": 0.0,
+  "se": 0.19688656698935011
+ },
+ "cifar100": {
+  "delta": 0.0,
+  "se": 0.21163198242826106
+ }
+}

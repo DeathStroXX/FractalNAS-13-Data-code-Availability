@@ -1,0 +1,21 @@
+\begin{tabular}{l rr l rr l}
+\toprule
+& \multicolumn{3}{c}{CIFAR-10} & \multicolumn{3}{c}{CIFAR-100} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+\textbf{Gene} & \textbf{Imp.} & \textbf{Spread} & \textbf{Best} & \textbf{Imp.} & \textbf{Spread} & \textbf{Best} \\
+\midrule
+optimizer & 0.179 & 18.9 & SGD & 0.117 & 7.4 & SGD \\
+dropout & 0.170 & 18.1 & 0.05 & 0.125 & 8.4 & 0.05 \\
+kernel size & 0.167 & 19.5 & 5 & 0.103 & 6.2 & 3 \\
+$n_\text{columns}$ & 0.166 & 14.3 & 2 & 0.248 & 11.4 & 2 \\
+normalization & 0.089 & 11.7 & BatchNorm & 0.091 & 5.3 & BatchNorm \\
+learning rate & 0.054 & 7.1 & 0.002 & 0.066 & 2.6 & 0.003 \\
+convolution & 0.043 & 8.6 & Standard & 0.024 & 3.3 & Standard \\
+$n_\text{blocks}$ & 0.032 & 2.6 & 3 & 0.042 & 1.8 & 4 \\
+base channels & 0.030 & 8.8 & 64 & 0.070 & 5.8 & 64 \\
+fc dropout & 0.025 & 7.7 & 0.05 & 0.044 & 3.7 & 0.1 \\
+momentum & 0.020 & 6.7 & 0.88 & 0.030 & 2.7 & 0.9 \\
+activation & 0.015 & 7.2 & GELU & 0.032 & 2.4 & GELU \\
+pooling & 0.009 & 0.0 & Max & 0.010 & 0.5 & Max \\
+\bottomrule
+\end{tabular}

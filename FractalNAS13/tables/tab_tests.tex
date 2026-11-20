@@ -1,0 +1,25 @@
+\begin{tabular}{l l r r}
+\toprule
+& & \multicolumn{2}{c}{$\Delta$ points (Holm $p$)} \\
+\cmidrule(lr){3-4}
+\textbf{Comparison} & \textbf{Test} & CIFAR-10 & CIFAR-100 \\
+\midrule
+\multicolumn{4}{l}{\textit{Policies, at an equal budget (Table~\ref{tab:searchvalue})}} \\
+tuned GA $-$ best screening & MWU & $-0.08$ ($0.774$) & $+0.33$ ($0.095$) \\
+as-run GA $-$ best screening & MWU & $-0.45$ ($0.147$) & $-0.31$ ($0.841$) \\
+reg. evolution $-$ tuned GA & WSR & $+1.40$ ($<10^{-4}$) & $+0.96$ ($<10^{-4}$) \\
+reg. evolution $S{=}10$ $-$ $S{=}3$ & WSR & $+2.70$ ($<10^{-4}$) & $+2.50$ ($<10^{-4}$) \\
+\midrule
+\multicolumn{4}{l}{\textit{Settings, best value against the one the pipeline fixed (Table~\ref{tab:settings})}} \\
+tournament size $k$ & WSR & $+0.42$ ($<10^{-4}$) & $+0.52$ ($<10^{-4}$) \\
+mutation rate $p_m$ & WSR & $+0.00$ ($1.000$) & $+0.00$ ($1.000$) \\
+population size & WSR & $+0.00$ ($1.000$) & $+0.00$ ($1.000$) \\
+elite count & WSR & $+0.23$ ($0.038$) & $+0.34$ ($<10^{-4}$) \\
+\midrule
+\multicolumn{4}{l}{\textit{Rewrite classes, against the operator each replaced (Supplementary Table~S11)}} \\
+Mutation rewrites & SSP ($1.000$) & $-0.11$ \scriptsize$[-0.25,+0.01]$ & $+0.11$ \scriptsize$[-0.02,+0.27]$ \\
+Initialization rewrites & SSP ($1.000$) & $-0.66$ \scriptsize$[-1.85,-0.01]$ & $+0.25$ \scriptsize$[-0.02,+0.49]$ \\
+Selection rewrites & SSP ($1.000$) & $-0.36$ \scriptsize$[-1.88,+0.72]$ & $+0.95$ \scriptsize$[+0.39,+1.55]$ \\
+Crossover rewrites & SSP ($0.363$) & $+0.01$ \scriptsize$[-0.45,+0.52]$ & $-0.91$ \scriptsize$[-1.76,-0.20]$ \\
+\bottomrule
+\end{tabular}

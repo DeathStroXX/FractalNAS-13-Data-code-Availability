@@ -1,0 +1,15 @@
+{
+ "r": 1000,
+ "cifar10": {
+  "as_registered": -3.220611554854143,
+  "as_registered_se": 0.11920188821358756,
+  "effective_treatment_pm": 0.0128,
+  "k10_at_pipeline_rate": 0.36304970000106157
+ },
+ "cifar100": {
+  "as_registered": -3.434836077305779,
+  "as_registered_se": 0.1206417284139701,
+  "effective_treatment_pm": 0.0128,
+  "k10_at_pipeline_rate": 0.42860734981102816
+ }
+}

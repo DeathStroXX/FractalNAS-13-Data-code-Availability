@@ -1,0 +1,916 @@
+{
+ "cifar10": {
+  "n_runs": 17,
+  "n_arch": 5319,
+  "transfers": [
+   {
+    "name": "split-half 1",
+    "n_fit": [
+     3188,
+     2131
+    ],
+    "rho_across": [
+     0.9667133370660146,
+     0.9566802004980072
+    ],
+    "a_to_b": {
+     "tournament size $k$": {
+      "recommended": "7",
+      "in_sample_gain": 0.1698838566180001,
+      "heldout_gain": 0.2604279912197427,
+      "heldout_best": "10",
+      "same_value": false,
+      "heldout_best_gain": 0.31272624651471403
+     },
+     "mutation rate $p_m$": {
+      "recommended": "0.1",
+      "in_sample_gain": 0.02365879737148191,
+      "heldout_gain": -0.1514337637517542,
+      "heldout_best": "0.08",
+      "same_value": false,
+      "heldout_best_gain": 0.0
+     },
+     "population size": {
+      "recommended": "20",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "20",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "elite count": {
+      "recommended": "1",
+      "in_sample_gain": 0.26685566109298975,
+      "heldout_gain": 0.19849785599444658,
+      "heldout_best": "2",
+      "same_value": false,
+      "heldout_best_gain": 0.41998260085378547
+     }
+    },
+    "b_to_a": {
+     "tournament size $k$": {
+      "recommended": "10",
+      "in_sample_gain": 0.31272624651471403,
+      "heldout_gain": 0.0024626209976901237,
+      "heldout_best": "7",
+      "same_value": false,
+      "heldout_best_gain": 0.1698838566180001
+     },
+     "mutation rate $p_m$": {
+      "recommended": "0.08",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "0.1",
+      "same_value": false,
+      "heldout_best_gain": 0.02365879737148191
+     },
+     "population size": {
+      "recommended": "20",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "20",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "elite count": {
+      "recommended": "2",
+      "in_sample_gain": 0.41998260085378547,
+      "heldout_gain": 0.0750859127115433,
+      "heldout_best": "1",
+      "same_value": false,
+      "heldout_best_gain": 0.26685566109298975
+     }
+    }
+   },
+   {
+    "name": "split-half 2",
+    "n_fit": [
+     3073,
+     2246
+    ],
+    "rho_across": [
+     0.9648793429327568,
+     0.9617747588492889
+    ],
+    "a_to_b": {
+     "tournament size $k$": {
+      "recommended": "10",
+      "in_sample_gain": 0.3594693812039793,
+      "heldout_gain": 0.15657192141352994,
+      "heldout_best": "10",
+      "same_value": true,
+      "heldout_best_gain": 0.15657192141352994
+     },
+     "mutation rate $p_m$": {
+      "recommended": "0.08",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "0.08",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "population size": {
+      "recommended": "20",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "20",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "elite count": {
+      "recommended": "2",
+      "in_sample_gain": 0.2605066435082506,
+      "heldout_gain": 0.38479398641109697,
+      "heldout_best": "2",
+      "same_value": true,
+      "heldout_best_gain": 0.38479398641109697
+     }
+    },
+    "b_to_a": {
+     "tournament size $k$": {
+      "recommended": "10",
+      "in_sample_gain": 0.15657192141352994,
+      "heldout_gain": 0.3594693812039793,
+      "heldout_best": "10",
+      "same_value": true,
+      "heldout_best_gain": 0.3594693812039793
+     },
+     "mutation rate $p_m$": {
+      "recommended": "0.08",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "0.08",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "population size": {
+      "recommended": "20",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "20",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "elite count": {
+      "recommended": "2",
+      "in_sample_gain": 0.38479398641109697,
+      "heldout_gain": 0.2605066435082506,
+      "heldout_best": "2",
+      "same_value": true,
+      "heldout_best_gain": 0.2605066435082506
+     }
+    }
+   },
+   {
+    "name": "split-half 3",
+    "n_fit": [
+     3067,
+     2252
+    ],
+    "rho_across": [
+     0.9627800608285116,
+     0.9635245593738228
+    ],
+    "a_to_b": {
+     "tournament size $k$": {
+      "recommended": "10",
+      "in_sample_gain": 0.5011636272806328,
+      "heldout_gain": 0.3059509191338492,
+      "heldout_best": "7",
+      "same_value": false,
+      "heldout_best_gain": 0.389135988659973
+     },
+     "mutation rate $p_m$": {
+      "recommended": "0.08",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "0.08",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "population size": {
+      "recommended": "20",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "20",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "elite count": {
+      "recommended": "2",
+      "in_sample_gain": 0.17133241410307676,
+      "heldout_gain": 0.19251474780577382,
+      "heldout_best": "2",
+      "same_value": true,
+      "heldout_best_gain": 0.19251474780577382
+     }
+    },
+    "b_to_a": {
+     "tournament size $k$": {
+      "recommended": "7",
+      "in_sample_gain": 0.389135988659973,
+      "heldout_gain": 0.4049192894250666,
+      "heldout_best": "10",
+      "same_value": false,
+      "heldout_best_gain": 0.5011636272806328
+     },
+     "mutation rate $p_m$": {
+      "recommended": "0.08",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "0.08",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "population size": {
+      "recommended": "20",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "20",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "elite count": {
+      "recommended": "2",
+      "in_sample_gain": 0.19251474780577382,
+      "heldout_gain": 0.17133241410307676,
+      "heldout_best": "2",
+      "same_value": true,
+      "heldout_best_gain": 0.17133241410307676
+     }
+    }
+   },
+   {
+    "name": "baseline runs vs restart runs",
+    "n_fit": [
+     881,
+     4438
+    ],
+    "rho_across": [
+     0.9221317301399602,
+     0.9521013441974947
+    ],
+    "a_to_b": {
+     "tournament size $k$": {
+      "recommended": "10",
+      "in_sample_gain": 0.4203025212339213,
+      "heldout_gain": 0.20701660072043637,
+      "heldout_best": "10",
+      "same_value": true,
+      "heldout_best_gain": 0.20701660072043637
+     },
+     "mutation rate $p_m$": {
+      "recommended": "0.08",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "0.08",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "population size": {
+      "recommended": "20",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "20",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "elite count": {
+      "recommended": "2",
+      "in_sample_gain": 0.13121428667076884,
+      "heldout_gain": 0.11413620212771036,
+      "heldout_best": "1",
+      "same_value": false,
+      "heldout_best_gain": 0.1503269751577534
+     }
+    },
+    "b_to_a": {
+     "tournament size $k$": {
+      "recommended": "10",
+      "in_sample_gain": 0.20701660072043637,
+      "heldout_gain": 0.4203025212339213,
+      "heldout_best": "10",
+      "same_value": true,
+      "heldout_best_gain": 0.4203025212339213
+     },
+     "mutation rate $p_m$": {
+      "recommended": "0.08",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "0.08",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "population size": {
+      "recommended": "20",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "20",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "elite count": {
+      "recommended": "1",
+      "in_sample_gain": 0.1503269751577534,
+      "heldout_gain": 0.11745999977743793,
+      "heldout_best": "2",
+      "same_value": false,
+      "heldout_best_gain": 0.13121428667076884
+     }
+    }
+   }
+  ]
+ },
+ "cifar100": {
+  "n_runs": 17,
+  "n_arch": 4763,
+  "transfers": [
+   {
+    "name": "split-half 1",
+    "n_fit": [
+     2889,
+     1874
+    ],
+    "rho_across": [
+     0.937929029837596,
+     0.9117836003963393
+    ],
+    "a_to_b": {
+     "tournament size $k$": {
+      "recommended": "10",
+      "in_sample_gain": 0.6506668687521682,
+      "heldout_gain": 0.6782163855107157,
+      "heldout_best": "10",
+      "same_value": true,
+      "heldout_best_gain": 0.6782163855107157
+     },
+     "mutation rate $p_m$": {
+      "recommended": "0.08",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "0.1",
+      "same_value": false,
+      "heldout_best_gain": 0.00404342045125361
+     },
+     "population size": {
+      "recommended": "20",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "20",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "elite count": {
+      "recommended": "1",
+      "in_sample_gain": 0.3592063445602989,
+      "heldout_gain": 0.26093858496784605,
+      "heldout_best": "4",
+      "same_value": false,
+      "heldout_best_gain": 0.41215620517079543
+     }
+    },
+    "b_to_a": {
+     "tournament size $k$": {
+      "recommended": "10",
+      "in_sample_gain": 0.6782163855107157,
+      "heldout_gain": 0.6506668687521682,
+      "heldout_best": "10",
+      "same_value": true,
+      "heldout_best_gain": 0.6506668687521682
+     },
+     "mutation rate $p_m$": {
+      "recommended": "0.1",
+      "in_sample_gain": 0.00404342045125361,
+      "heldout_gain": -0.16426413577985954,
+      "heldout_best": "0.08",
+      "same_value": false,
+      "heldout_best_gain": 0.0
+     },
+     "population size": {
+      "recommended": "20",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "20",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "elite count": {
+      "recommended": "4",
+      "in_sample_gain": 0.41215620517079543,
+      "heldout_gain": 0.1199359227305763,
+      "heldout_best": "1",
+      "same_value": false,
+      "heldout_best_gain": 0.3592063445602989
+     }
+    }
+   },
+   {
+    "name": "split-half 2",
+    "n_fit": [
+     2780,
+     1983
+    ],
+    "rho_across": [
+     0.9352312402711285,
+     0.9254160855743637
+    ],
+    "a_to_b": {
+     "tournament size $k$": {
+      "recommended": "10",
+      "in_sample_gain": 0.31954764339158714,
+      "heldout_gain": 0.7901692403123377,
+      "heldout_best": "10",
+      "same_value": true,
+      "heldout_best_gain": 0.7901692403123377
+     },
+     "mutation rate $p_m$": {
+      "recommended": "0.08",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "0.08",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "population size": {
+      "recommended": "20",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "20",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "elite count": {
+      "recommended": "2",
+      "in_sample_gain": 0.18855898018323813,
+      "heldout_gain": 0.4198313406377068,
+      "heldout_best": "2",
+      "same_value": true,
+      "heldout_best_gain": 0.4198313406377068
+     }
+    },
+    "b_to_a": {
+     "tournament size $k$": {
+      "recommended": "10",
+      "in_sample_gain": 0.7901692403123377,
+      "heldout_gain": 0.31954764339158714,
+      "heldout_best": "10",
+      "same_value": true,
+      "heldout_best_gain": 0.31954764339158714
+     },
+     "mutation rate $p_m$": {
+      "recommended": "0.08",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "0.08",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "population size": {
+      "recommended": "20",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "20",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "elite count": {
+      "recommended": "2",
+      "in_sample_gain": 0.4198313406377068,
+      "heldout_gain": 0.18855898018323813,
+      "heldout_best": "2",
+      "same_value": true,
+      "heldout_best_gain": 0.18855898018323813
+     }
+    }
+   },
+   {
+    "name": "split-half 3",
+    "n_fit": [
+     2766,
+     1997
+    ],
+    "rho_across": [
+     0.924929692563259,
+     0.9293912027311154
+    ],
+    "a_to_b": {
+     "tournament size $k$": {
+      "recommended": "10",
+      "in_sample_gain": 0.6784697098694181,
+      "heldout_gain": 0.6252011713398673,
+      "heldout_best": "10",
+      "same_value": true,
+      "heldout_best_gain": 0.6252011713398673
+     },
+     "mutation rate $p_m$": {
+      "recommended": "0.1",
+      "in_sample_gain": 0.01948164155874821,
+      "heldout_gain": -0.14251174267415934,
+      "heldout_best": "0.08",
+      "same_value": false,
+      "heldout_best_gain": 0.0
+     },
+     "population size": {
+      "recommended": "20",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "20",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "elite count": {
+      "recommended": "2",
+      "in_sample_gain": 0.35984538675010214,
+      "heldout_gain": 0.5645779767078452,
+      "heldout_best": "2",
+      "same_value": true,
+      "heldout_best_gain": 0.5645779767078452
+     }
+    },
+    "b_to_a": {
+     "tournament size $k$": {
+      "recommended": "10",
+      "in_sample_gain": 0.6252011713398673,
+      "heldout_gain": 0.6784697098694181,
+      "heldout_best": "10",
+      "same_value": true,
+      "heldout_best_gain": 0.6784697098694181
+     },
+     "mutation rate $p_m$": {
+      "recommended": "0.08",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "0.1",
+      "same_value": false,
+      "heldout_best_gain": 0.01948164155874821
+     },
+     "population size": {
+      "recommended": "20",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "20",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "elite count": {
+      "recommended": "2",
+      "in_sample_gain": 0.5645779767078452,
+      "heldout_gain": 0.35984538675010214,
+      "heldout_best": "2",
+      "same_value": true,
+      "heldout_best_gain": 0.35984538675010214
+     }
+    }
+   },
+   {
+    "name": "baseline runs vs restart runs",
+    "n_fit": [
+     776,
+     3987
+    ],
+    "rho_across": [
+     0.8522146841726033,
+     0.9329701342160354
+    ],
+    "a_to_b": {
+     "tournament size $k$": {
+      "recommended": "5",
+      "in_sample_gain": 0.3000021228872498,
+      "heldout_gain": 0.309864834204852,
+      "heldout_best": "10",
+      "same_value": false,
+      "heldout_best_gain": 0.7041496054475189
+     },
+     "mutation rate $p_m$": {
+      "recommended": "0.1",
+      "in_sample_gain": 0.027685207350018004,
+      "heldout_gain": -0.006253575712015902,
+      "heldout_best": "0.08",
+      "same_value": false,
+      "heldout_best_gain": 0.0
+     },
+     "population size": {
+      "recommended": "20",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "20",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "elite count": {
+      "recommended": "2",
+      "in_sample_gain": 0.3203197093155694,
+      "heldout_gain": 0.3441132369216575,
+      "heldout_best": "2",
+      "same_value": true,
+      "heldout_best_gain": 0.3441132369216575
+     }
+    },
+    "b_to_a": {
+     "tournament size $k$": {
+      "recommended": "10",
+      "in_sample_gain": 0.7041496054475189,
+      "heldout_gain": 0.2600440764912406,
+      "heldout_best": "5",
+      "same_value": false,
+      "heldout_best_gain": 0.3000021228872498
+     },
+     "mutation rate $p_m$": {
+      "recommended": "0.08",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "0.1",
+      "same_value": false,
+      "heldout_best_gain": 0.027685207350018004
+     },
+     "population size": {
+      "recommended": "20",
+      "in_sample_gain": 0.0,
+      "heldout_gain": 0.0,
+      "heldout_best": "20",
+      "same_value": true,
+      "heldout_best_gain": 0.0
+     },
+     "elite count": {
+      "recommended": "2",
+      "in_sample_gain": 0.3441132369216575,
+      "heldout_gain": 0.3203197093155694,
+      "heldout_best": "2",
+      "same_value": true,
+      "heldout_best_gain": 0.3203197093155694
+     }
+    }
+   }
+  ]
+ },
+ "cross_dataset": {
+  "cifar10_to_cifar100": {
+   "tournament size $k$": {
+    "recommended": "10",
+    "in_sample_gain": 0.3765974728147654,
+    "heldout_gain": 0.5122003623863733,
+    "heldout_best": "10",
+    "same_value": true,
+    "heldout_best_gain": 0.5122003623863733
+   },
+   "mutation rate $p_m$": {
+    "recommended": "0.1",
+    "in_sample_gain": 0.06636191087477528,
+    "heldout_gain": -0.1816897605553507,
+    "heldout_best": "0.08",
+    "same_value": false,
+    "heldout_best_gain": 0.0
+   },
+   "population size": {
+    "recommended": "20",
+    "in_sample_gain": 0.0,
+    "heldout_gain": 0.0,
+    "heldout_best": "20",
+    "same_value": true,
+    "heldout_best_gain": 0.0
+   },
+   "elite count": {
+    "recommended": "2",
+    "in_sample_gain": 0.2628730831720105,
+    "heldout_gain": 0.21513800790366844,
+    "heldout_best": "2",
+    "same_value": true,
+    "heldout_best_gain": 0.21513800790366844
+   }
+  },
+  "cifar100_to_cifar10": {
+   "tournament size $k$": {
+    "recommended": "10",
+    "in_sample_gain": 0.5122003623863733,
+    "heldout_gain": 0.3765974728147654,
+    "heldout_best": "10",
+    "same_value": true,
+    "heldout_best_gain": 0.3765974728147654
+   },
+   "mutation rate $p_m$": {
+    "recommended": "0.08",
+    "in_sample_gain": 0.0,
+    "heldout_gain": 0.0,
+    "heldout_best": "0.1",
+    "same_value": false,
+    "heldout_best_gain": 0.06636191087477528
+   },
+   "population size": {
+    "recommended": "20",
+    "in_sample_gain": 0.0,
+    "heldout_gain": 0.0,
+    "heldout_best": "20",
+    "same_value": true,
+    "heldout_best_gain": 0.0
+   },
+   "elite count": {
+    "recommended": "2",
+    "in_sample_gain": 0.21513800790366844,
+    "heldout_gain": 0.2628730831720105,
+    "heldout_best": "2",
+    "same_value": true,
+    "heldout_best_gain": 0.2628730831720105
+   }
+  }
+ },
+ "full_sweeps": {
+  "cifar10": {
+   "tournament size $k$": {
+    "cells": {
+     "2": 93.05485258531245,
+     "3": 93.5347853737812,
+     "5": 93.8234344206259,
+     "7": 93.71560884732165,
+     "10": 93.91138284659597
+    },
+    "pipeline": "3",
+    "best": "10",
+    "gain": 0.3765974728147654
+   },
+   "mutation rate $p_m$": {
+    "cells": {
+     "0.02": 91.78965693273972,
+     "0.05": 93.27478763974571,
+     "0.08": 93.5347853737812,
+     "0.1": 93.60114728465598,
+     "0.2": 92.21706756712717,
+     "0.3": 90.03225914764157,
+     "0.4": 87.8883380521615
+    },
+    "pipeline": "0.08",
+    "best": "0.1",
+    "gain": 0.06636191087477528
+   },
+   "population size": {
+    "cells": {
+     "10": 92.85567609587443,
+     "20": 93.5347853737812,
+     "40": 92.88938010202243,
+     "52": 92.25422652614886
+    },
+    "pipeline": "20",
+    "best": "20",
+    "gain": 0.0
+   },
+   "elite count": {
+    "cells": {
+     "0": 92.94500791684895,
+     "1": 93.68156287204005,
+     "2": 93.79765845695322,
+     "4": 93.79214967299276,
+     "5": 93.5347853737812,
+     "8": 92.91105486423758
+    },
+    "pipeline": "5",
+    "best": "2",
+    "gain": 0.2628730831720105
+   }
+  },
+  "cifar100": {
+   "tournament size $k$": {
+    "cells": {
+     "2": 49.59175417181922,
+     "3": 50.42814232784186,
+     "5": 50.55567694281927,
+     "7": 50.715205933062116,
+     "10": 50.940342690228235
+    },
+    "pipeline": "3",
+    "best": "10",
+    "gain": 0.5122003623863733
+   },
+   "mutation rate $p_m$": {
+    "cells": {
+     "0.02": 48.39673199290126,
+     "0.05": 50.14341189061571,
+     "0.08": 50.42814232784186,
+     "0.1": 50.24645256728651,
+     "0.2": 48.41186742043796,
+     "0.3": 46.331475655487395,
+     "0.4": 43.766142887459175
+    },
+    "pipeline": "0.08",
+    "best": "0.08",
+    "gain": 0.0
+   },
+   "population size": {
+    "cells": {
+     "10": 49.77475083096915,
+     "20": 50.42814232784186,
+     "40": 49.50014820530593,
+     "52": 48.71991717325866
+    },
+    "pipeline": "20",
+    "best": "20",
+    "gain": 0.0
+   },
+   "elite count": {
+    "cells": {
+     "0": 49.56998243691135,
+     "1": 50.533584076438196,
+     "2": 50.64328033574553,
+     "4": 50.39708407268095,
+     "5": 50.42814232784186,
+     "8": 49.57531712797599
+    },
+    "pipeline": "5",
+    "best": "2",
+    "gain": 0.21513800790366844
+   }
+  }
+ },
+ "summary": {
+  "cifar10": {
+   "n": 32,
+   "in_sample": 0.14117050801938014,
+   "heldout": 0.10875047637611868,
+   "optimism": 0.03242003164326146,
+   "same_value": 22,
+   "sign_kept": 16,
+   "per_family": {
+    "tournament size $k$": {
+     "in_sample": 0.31453376795564836,
+     "heldout": 0.26464015566852694,
+     "optimism": 0.049893612287121414,
+     "same_value": 4,
+     "n": 8,
+     "heldout_min": 0.0024626209976901237,
+     "heldout_max": 0.4203025212339213
+    },
+    "mutation rate $p_m$": {
+     "in_sample": 0.0029573496714352387,
+     "heldout": -0.018929220468969277,
+     "optimism": 0.021886570140404515,
+     "same_value": 6,
+     "n": 8,
+     "heldout_min": -0.1514337637517542,
+     "heldout_max": 0.0
+    },
+    "population size": {
+     "in_sample": 0.0,
+     "heldout": 0.0,
+     "optimism": 0.0,
+     "same_value": 8,
+     "n": 8,
+     "heldout_min": 0.0,
+     "heldout_max": 0.0
+    },
+    "elite count": {
+     "in_sample": 0.24719091445043695,
+     "heldout": 0.18929097030491704,
+     "optimism": 0.05789994414551991,
+     "same_value": 4,
+     "n": 8,
+     "heldout_min": 0.0750859127115433,
+     "heldout_max": 0.38479398641109697
+    }
+   }
+  },
+  "cifar100": {
+   "n": 32,
+   "in_sample": 0.2426950686599405,
+   "heldout": 0.20553973793502167,
+   "optimism": 0.037155330724918834,
+   "same_value": 22,
+   "sign_kept": 16,
+   "per_family": {
+    "tournament size $k$": {
+     "in_sample": 0.5933028434388579,
+     "heldout": 0.5390224912340233,
+     "optimism": 0.054280352204834514,
+     "same_value": 6,
+     "n": 8,
+     "heldout_min": 0.2600440764912406,
+     "heldout_max": 0.7901692403123377
+    },
+    "mutation rate $p_m$": {
+     "in_sample": 0.006401283670002478,
+     "heldout": -0.03912868177075435,
+     "optimism": 0.045529965440756826,
+     "same_value": 2,
+     "n": 8,
+     "heldout_min": -0.16426413577985954,
+     "heldout_max": 0.0
+    },
+    "population size": {
+     "in_sample": 0.0,
+     "heldout": 0.0,
+     "optimism": 0.0,
+     "same_value": 8,
+     "n": 8,
+     "heldout_min": 0.0,
+     "heldout_max": 0.0
+    },
+    "elite count": {
+     "in_sample": 0.3710761475309017,
+     "heldout": 0.3222651422768177,
+     "optimism": 0.048811005254083994,
+     "same_value": 6,
+     "n": 8,
+     "heldout_min": 0.1199359227305763,
+     "heldout_max": 0.5645779767078452
+    }
+   }
+  }
+ }
+}

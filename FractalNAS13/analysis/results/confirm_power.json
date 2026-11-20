@@ -1,0 +1,198 @@
+{
+ "alpha": 0.05,
+ "n_seeds": 3,
+ "half_threshold": 0.5,
+ "gpu_hours_per_run_registered": 3.2,
+ "gpu_hours_per_run_released": {
+  "cifar10": 13.562460037262962,
+  "cifar100": 11.575417083025927
+ },
+ "target_power": 0.8,
+ "pairing_rho_on_benchmark": {
+  "cifar10": 0.1592721768531897,
+  "cifar100": 0.05647296802813923
+ },
+ "source": "arm-level run-to-run sd of the best architecture found, results/bench_profile.json real_arm_sd",
+ "claims": {
+  "B1": {
+   "cifar10": {
+    "sd_arm_pooled": 1.9702869503365918,
+    "sd_arm_by_arm": {
+     "baseline": 2.881567860268665,
+     "frozen": 2.348855040227048,
+     "qwen": 1.3490861104219187,
+     "deepseek": 1.3829798745221606,
+     "mistral": 1.362693411348762
+    },
+    "unpaired": {
+     "sd_run": 1.9702869503365918,
+     "rho_pair": 0.0,
+     "sd_diff": 2.786406526932733,
+     "se_mean": 1.6087325583963437,
+     "predicted": 1.43,
+     "threshold": 0.715,
+     "p_confirm_if_true": 0.6716410982697784,
+     "p_confirm_if_null": 0.32835890173022164,
+     "p_refute_if_true": 0.18702880883279355,
+     "p_directional_if_true": 0.1413300928974281,
+     "cohen_d": 0.5132058033090166,
+     "power_paired_t": 0.08589757197596601,
+     "seeds_for_80_power": 32,
+     "gpu_hours_for_80_power": 205,
+     "gpu_hours_for_80_power_at_released_rate": 868
+    },
+    "paired_as_on_benchmark": {
+     "sd_run": 1.9702869503365918,
+     "rho_pair": 0.1592721768531897,
+     "sd_diff": 2.5548898965614266,
+     "se_mean": 1.475066369529595,
+     "predicted": 1.43,
+     "threshold": 0.715,
+     "p_confirm_if_true": 0.686063913109435,
+     "p_confirm_if_null": 0.31393608689056496,
+     "p_refute_if_true": 0.16616088053121242,
+     "p_directional_if_true": 0.14777520635935254,
+     "cohen_d": 0.5597110082609068,
+     "power_paired_t": 0.09254379209284445,
+     "seeds_for_80_power": 28,
+     "gpu_hours_for_80_power": 179,
+     "gpu_hours_for_80_power_at_released_rate": 759
+    }
+   },
+   "cifar100": {
+    "sd_arm_pooled": 1.6252417256108915,
+    "sd_arm_by_arm": {
+     "baseline": 2.129233038756758,
+     "frozen": 1.5189535871776985,
+     "qwen": 0.8893443277681239,
+     "deepseek": 1.5788075669103365,
+     "mistral": 1.7557429576487937
+    },
+    "unpaired": {
+     "sd_run": 1.6252417256108915,
+     "rho_pair": 0.0,
+     "sd_diff": 2.2984388904935753,
+     "se_mean": 1.3270043121423705,
+     "predicted": 1.85,
+     "threshold": 0.925,
+     "p_confirm_if_true": 0.7571169938851021,
+     "p_confirm_if_null": 0.24288300611489788,
+     "p_refute_if_true": 0.08164105522092702,
+     "p_directional_if_true": 0.16124195089397086,
+     "cohen_d": 0.8048941425641838,
+     "power_paired_t": 0.13587861385525474,
+     "seeds_for_80_power": 15,
+     "gpu_hours_for_80_power": 96,
+     "gpu_hours_for_80_power_at_released_rate": 347
+    },
+    "paired_as_on_benchmark": {
+     "sd_run": 1.6252417256108915,
+     "rho_pair": 0.05647296802813923,
+     "sd_diff": 2.2325959627925585,
+     "se_mean": 1.2889898801099553,
+     "predicted": 1.85,
+     "threshold": 0.925,
+     "p_confirm_if_true": 0.7635030122600779,
+     "p_confirm_if_null": 0.23649698773992212,
+     "p_refute_if_true": 0.07561044621388538,
+     "p_directional_if_true": 0.16088654152603674,
+     "cohen_d": 0.8286317949289836,
+     "power_paired_t": 0.1407651775982497,
+     "seeds_for_80_power": 14,
+     "gpu_hours_for_80_power": 90,
+     "gpu_hours_for_80_power_at_released_rate": 324
+    }
+   }
+  },
+  "B2": {
+   "cifar10": {
+    "sd_arm_pooled": 1.9702869503365918,
+    "sd_arm_by_arm": {
+     "baseline": 2.881567860268665,
+     "frozen": 2.348855040227048,
+     "qwen": 1.3490861104219187,
+     "deepseek": 1.3829798745221606,
+     "mistral": 1.362693411348762
+    },
+    "unpaired": {
+     "sd_run": 1.9702869503365918,
+     "rho_pair": 0.0,
+     "sd_diff": 2.786406526932733,
+     "se_mean": 1.6087325583963437,
+     "predicted": 0.55,
+     "threshold": 0.275,
+     "p_confirm_if_true": 0.5678653238065077,
+     "p_confirm_if_null": 0.4321346761934922,
+     "p_refute_if_true": 0.36621907728134384,
+     "p_directional_if_true": 0.06591559891214849,
+     "cohen_d": 0.19738684742654483,
+     "power_paired_t": 0.055397829421050676,
+     "seeds_for_80_power": 204,
+     "gpu_hours_for_80_power": 1306,
+     "gpu_hours_for_80_power_at_released_rate": 5533
+    },
+    "paired_as_on_benchmark": {
+     "sd_run": 1.9702869503365918,
+     "rho_pair": 0.1592721768531897,
+     "sd_diff": 2.5548898965614266,
+     "se_mean": 1.475066369529595,
+     "predicted": 0.55,
+     "threshold": 0.275,
+     "p_confirm_if_true": 0.5739471134245797,
+     "p_confirm_if_null": 0.4260528865754203,
+     "p_refute_if_true": 0.3546246181423365,
+     "p_directional_if_true": 0.07142826843308381,
+     "cohen_d": 0.21527346471573341,
+     "power_paired_t": 0.0564169635482538,
+     "seeds_for_80_power": 172,
+     "gpu_hours_for_80_power": 1101,
+     "gpu_hours_for_80_power_at_released_rate": 4665
+    }
+   },
+   "cifar100": {
+    "sd_arm_pooled": 1.6252417256108915,
+    "sd_arm_by_arm": {
+     "baseline": 2.129233038756758,
+     "frozen": 1.5189535871776985,
+     "qwen": 0.8893443277681239,
+     "deepseek": 1.5788075669103365,
+     "mistral": 1.7557429576487937
+    },
+    "unpaired": {
+     "sd_run": 1.6252417256108915,
+     "rho_pair": 0.0,
+     "sd_diff": 2.2984388904935753,
+     "se_mean": 1.3270043121423705,
+     "predicted": 0.35,
+     "threshold": 0.175,
+     "p_confirm_if_true": 0.5524588078225622,
+     "p_confirm_if_null": 0.4475411921774378,
+     "p_refute_if_true": 0.3959855237922302,
+     "p_directional_if_true": 0.05155566838520764,
+     "cohen_d": 0.15227727021484555,
+     "power_paired_t": 0.05321627698417776,
+     "seeds_for_80_power": 341,
+     "gpu_hours_for_80_power": 2182,
+     "gpu_hours_for_80_power_at_released_rate": 7894
+    },
+    "paired_as_on_benchmark": {
+     "sd_run": 1.6252417256108915,
+     "rho_pair": 0.05647296802813923,
+     "sd_diff": 2.2325959627925585,
+     "se_mean": 1.2889898801099553,
+     "predicted": 0.35,
+     "threshold": 0.175,
+     "p_confirm_if_true": 0.5539965582172925,
+     "p_confirm_if_null": 0.44600344178270757,
+     "p_refute_if_true": 0.3929915423319409,
+     "p_directional_if_true": 0.053011899450766564,
+     "cohen_d": 0.1567681774189969,
+     "power_paired_t": 0.053408435224915216,
+     "seeds_for_80_power": 322,
+     "gpu_hours_for_80_power": 2061,
+     "gpu_hours_for_80_power_at_released_rate": 7455
+    }
+   }
+  }
+ }
+}

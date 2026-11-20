@@ -1,0 +1,23 @@
+\begin{tabular}{l rr}
+\toprule
+& \textbf{CIFAR-10} & \textbf{CIFAR-100} \\
+\midrule
+\multicolumn{3}{l}{\textit{Fidelity (held out, against measured 3-epoch accuracy)}} \\
+Spearman $\rho$, genotype model & 0.972 & 0.945 \\
+Spearman $\rho$, one measured training epoch & 0.937 & 0.889 \\
+Spearman $\rho$, genotype model $+$ one epoch & 0.974 & 0.950 \\
+Mean absolute error (pts) & 3.17 & 2.35 \\
+Architectures fitted on & 5{,}319 & 4{,}763 \\
+\midrule
+\multicolumn{3}{l}{\textit{Cost of one 26-generation, 520-evaluation search}} \\
+On the benchmark & \multicolumn{2}{c}{$\approx$8\,ms} \\
+1{,}000 replicates & \multicolumn{2}{c}{$\approx$4.1\,s} \\
+Trained for real (mean over 34 runs) & \multicolumn{2}{c}{13.6 GPU-hours} \\
+\midrule
+\multicolumn{3}{l}{\textit{Resolution: s.e.\ of the best architecture found (pts)}} \\
+1 replicate & 1.95 & 1.87 \\
+100 replicates & 0.19 & 0.19 \\
+1{,}000 replicates & 0.06 & 0.06 \\
+3 real runs (the baseline arm) & 1.66 & 1.23 \\
+\bottomrule
+\end{tabular}
